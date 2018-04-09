@@ -1,0 +1,13 @@
+<div class="card p-2 m-2">
+  <p>First: {{ user.firstName }}</p>
+  <p>Last name: {{ user.lastName }}</p>
+  <p>Email: {{ user.email }}</p>
+  <p>Phone: {{ user.phone }}</p>
+  <p>Birthday: {{ user.birthday }}</p>
+  <p>Age: {{ user.age }}</p>
+
+  <div>
+    <a class="btn btn-primary" href="#" (click)="edit(user)">Edit</a>
+    <a class="btn btn-danger" href="#" (click)="remove(user)">Remove</a>
+  </div>
+</div>

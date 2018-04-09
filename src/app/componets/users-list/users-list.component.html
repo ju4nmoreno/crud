@@ -1,0 +1,22 @@
+<div >
+  <a href="#" class="btn btn-primary m-2" (click)="toggle($event)">
+      {{ hide ? 'Add User': 'closer add User'}}
+  </a>
+  <div class="row">
+    
+    <app-user-add
+      [hidden]="hide"
+      (userAdded)="addUser($event)"
+      class="col-md-4 p-2"></app-user-add>
+
+    <div
+      [ngClass]="{'col-md-8': !hide}"
+      class="p-2 d-flex flex-wrap">
+      <app-user 
+        *ngFor="let user of users"
+        [user]="user"
+       ></app-user>
+    </div>
+
+  </div>
+</div>

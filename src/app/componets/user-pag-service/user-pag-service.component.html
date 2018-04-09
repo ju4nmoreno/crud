@@ -1,0 +1,8 @@
+<nav class="card m-2">
+  <ul>
+    <li *ngFor="let item of getItem(numberPages)">
+      <a href="#" (click)="pagination($event, item + 1)">{{item + 1}}</a>
+    </li>
+  </ul>  
+</nav>
+

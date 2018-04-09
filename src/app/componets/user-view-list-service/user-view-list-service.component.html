@@ -1,0 +1,8 @@
+<h2>User</h2>
+
+<app-user-add-list-service
+  [info]="info"></app-user-add-list-service> 
+<app-user-pag-service
+  (goPage)="changePage($event)"
+  [numberPages]="nPages"
+  [all]="all"></app-user-pag-service>
